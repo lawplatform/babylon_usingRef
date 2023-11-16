@@ -34,6 +34,7 @@ const Monkey: FC = forwardRef((props, ref) => {
 	return (
 		<Suspense fallback={<box name="fallback" position={new Vector3(0, 0, 0)} />}>
 			<Model
+				//	ref= {modelRef}
 				name="monkey"
 				rootUrl={`${baseUrl}`}
 				sceneFilename={`monkey.glb`}
